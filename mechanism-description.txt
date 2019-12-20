@@ -1,0 +1,8 @@
+The kv-store system achieves availability, partition tolerance, and causal consistency by  
+implementing several key design features. It uses consistent hashing with virtual shards  
+in order to load balance and increase stability. We also use the concept of shards to  
+ensure sufficient replication for all keys. Each message sent and received also contains  
+a causal context object in the form of vector clocks in order to uphold causal consistency.  
+In an attempt uphold consistency among replicas in the case of a network partition, we  
+have also implemented a gossip protocol. This can be used to update all replicas when  
+repairing a partition across node replicas.

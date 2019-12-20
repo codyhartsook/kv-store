@@ -4,8 +4,8 @@ Kv_store is a distributed key-value store that is partition-tolerant, available,
 and causally consistent. 
 
 # Endpoints
-IP address: 10.10.0.0/16  
-Port numbers: 13800/16
+IP: 10.10.0.0  
+Port: 13800
 
 ### Key operations:
 To PUT, GET or DELETE a key from the system, send a request to the  
